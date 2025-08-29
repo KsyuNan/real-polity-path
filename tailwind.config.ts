@@ -18,6 +18,10 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'montserrat': ['Montserrat', 'sans-serif'],
+				'inter': ['Inter', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -51,6 +55,12 @@ export default {
 				card: {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
+				},
+				brand: {
+					cream: 'hsl(var(--brand-cream))',
+					blue: 'hsl(var(--brand-blue))',
+					navy: 'hsl(var(--brand-navy))',
+					gold: 'hsl(var(--brand-gold))',
 				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
