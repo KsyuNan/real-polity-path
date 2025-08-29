@@ -26,5 +26,13 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <script>
+window.addEventListener('error', (e) => {
+  const d = document.createElement('div');
+  d.style = "position:fixed;bottom:0;left:0;right:0;padding:10px;background:#ffeded;color:#b00020;font:14px/1.4 sans-serif;z-index:9999";
+  d.textContent = "JS error: " + (e.message || e.filename || "unknown");
+  document.body.appendChild(d);
+});
+</script>
   </body>
 </html>
