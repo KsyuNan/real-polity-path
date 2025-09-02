@@ -33,6 +33,9 @@ window.addEventListener('error', (e) => {
   d.textContent = "JS error: " + (e.message || e.filename || "unknown");
   document.body.appendChild(d);
 });
+  const redirect = location.pathname + location.search + location.hash;
+  const base = "/real-polity-path";
+  location.replace(`${base}/index.html?redirect=${encodeURIComponent(redirect)}`);
 </script>
   </body>
 </html>
